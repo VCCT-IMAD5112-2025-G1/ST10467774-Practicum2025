@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music"
+    tools:context=".PlayListActivity2">
+
+    <TextView
+        android:id="@+id/textSongList"
+        android:layout_width="291dp"
+        android:layout_height="127dp"
+        android:text="SongList"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <TextView
+        android:id="@+id/textAverageRating"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:text="RatingDisplay"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:text="RETURN"
+        android:textAlignment="center"
+        android:textColor="#120F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="539dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
