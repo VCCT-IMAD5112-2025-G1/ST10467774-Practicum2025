@@ -23,7 +23,8 @@ class PlayListActivity2 : AppCompatActivity() {
         var displayText = ""
         var totalRating = 0
 
-        for (i in MainActivity.songTitle.indices) {
+        for (i in MainActivity.songTitles
+            .indices) {
             displayText += "Song ${i + 1}:"
 
             displayText += "Title: ${MainActivity.songTitles[i]}"
