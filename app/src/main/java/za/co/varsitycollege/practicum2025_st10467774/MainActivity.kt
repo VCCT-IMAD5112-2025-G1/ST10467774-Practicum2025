@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity() {
         val viewPlaylistButton = findViewById<Button>(R.id.viewButton)
         val exitButton = findViewById<Button>(R.id.exitButton)
 
-        saveButton.androidx.compose.foundation.layout.Box {
+        val box = saveButton.androidx.compose.foundation.layout.Box {
             setOnClickListener {
                 val title = titleInput.text.toString().trim()
                 val artist = artistInput.text.toString().trim()
                 val ratingString = ratingString.text.toString().trim()
                 val comment = commentInput.text.toString().trim()
 
-                if (title.isEmpty() || artist.isEmpty() || rating.isEmpty() || comment.isEmpty()) {
+                if (title.isEmpty() || artist.isEmpty() || ratingString.isEmpty() || comment.isEmpty()) {
                     Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 }
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 titleInput.text.clear()
                 artistInput.text.clear()
                 val ratingInput = null
-                ratingInput.text.clear()
+                ratingString.text.clear()
                 commentInput.text.clear()
             }
         }
