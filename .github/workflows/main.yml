@@ -4,7 +4,7 @@ on:
     branches: ["master"]
 jobs: 
   build:
-    run-on: ubunt-latest
+    run-on: ubuntu-latest
     steps:
      - name: Check out respository
        uses: actions/checkout@v2
